@@ -1,0 +1,843 @@
+Create a modern futuristic frontend-only emergency navigation app UI named “ResQRoute AI” using React Native (Expo). The app must work perfectly on mobile, tablet, and desktop responsive layouts. Build only frontend screens, animations, navigation, and UI components using dummy data. Do not create backend or database logic.
+
+IMPORTANT:
+
+Follow the UI style shown in the reference images:
+
+- Dark futuristic background
+
+- Neon cyan and red glow
+
+- Cyber-style navigation panels
+
+- Glassmorphism cards
+
+- Premium telemetry-style UI
+
+- Minimal professional emergency interface
+
+- Animated futuristic map system
+
+Use:
+
+- React Native + Expo
+
+- React Navigation
+
+- NativeWind or Styled Components
+
+- React Native Reanimated
+
+- Lottie animations
+
+- Responsive layouts for mobile/tablet/desktop
+
+====================================
+
+DESIGN STYLE
+
+====================================
+
+Create:
+
+- Futuristic cyber emergency UI
+
+- Neon cyan glow borders
+
+- Dark navy/black background
+
+- Smooth hover effects
+
+- Animated glowing cards
+
+- Telemetry-inspired navigation panels
+
+- Responsive futuristic dashboard layout
+
+- Animated map lines
+
+- Floating cyber effects
+
+Add:
+
+- Smooth fade animations
+
+- Glow pulse effects
+
+- Floating neon shadows
+
+- Smooth transitions
+
+- Animated navigation route line
+
+- Cyber grid background on map
+
+====================================
+
+APP FLOW
+
+====================================
+
+1. WELCOME SCREEN
+
+Show:
+
+- Animated futuristic background
+
+- Animated logo reveal
+
+- App name:
+
+  “ResQRoute AI”
+
+- Tagline:
+
+  “Smart Emergency Navigation System”
+
+- Large animated “Get Started” button
+
+- Smooth fade and glow transitions
+
+When clicked:
+
+→ Open Location Permission Popup
+
+====================================
+
+2. LOCATION ACCESS POPUP
+
+====================================
+
+Show:
+
+- Background blur
+
+- GPS animated icon
+
+- Glass popup card
+
+- Allow Access button
+
+- Exit button
+
+If Allow clicked:
+
+→ Open Role Selection
+
+====================================
+
+3. ROLE SELECTION SCREEN
+
+====================================
+
+Create two futuristic animated cards:
+
+- User
+
+- Ambulance Driver
+
+Each includes:
+
+- Neon icon
+
+- Glow border
+
+- Hover/touch animation
+
+- Smooth transition
+
+====================================
+
+TOP NAVBAR
+
+====================================
+
+Add futuristic top navbar above all main screens.
+
+Navbar should include:
+
+- App logo
+
+- Active role text
+
+  Example:
+
+  USER MODE
+
+  or
+
+  DRIVER MODE
+
+- “Switch Role” button
+
+Use:
+
+- Floating glass navbar
+
+- Neon cyan glow border
+
+- Blur effect
+
+- Smooth animations
+
+====================================
+
+SWITCH ROLE BUTTON
+
+====================================
+
+Create animated “Switch Role” button.
+
+When clicked:
+
+- Smooth transition animation
+
+- Switch between:
+
+  - User Side
+
+  - Ambulance Driver Side
+
+Use:
+
+- Neon glow effect
+
+- Glassmorphism button
+
+- Hover/touch animation
+
+- Floating cyber glow
+
+====================================
+
+USER SIDE
+
+====================================
+
+BOTTOM NAVIGATION BAR:
+
+- Home
+
+- Nearby
+
+- Navigation
+
+- Profile
+
+Create futuristic animated navbar similar to cyber dashboard UI.
+
+Use:
+
+- Neon active tab
+
+- Glow underline animation
+
+- Floating glass navbar
+
+- Responsive design
+
+====================================
+
+4. USER HOME SCREEN
+
+====================================
+
+Top Section:
+
+- User profile card
+
+- Circular futuristic profile image
+
+- Unique User ID
+
+  Example:
+
+  RESQ-48291
+
+====================================
+
+SERVICES SECTION
+
+====================================
+
+Create service cards:
+
+- Hospital
+
+- Police Station
+
+- Petrol Pump
+
+- Puncture Center
+
+Each card includes:
+
+- Futuristic icon
+
+- “Find” button
+
+- Glow animation
+
+- Glassmorphism design
+
+- Hover effect
+
+IMPORTANT:
+
+Do NOT show names initially.
+
+====================================
+
+5. NEARBY SCREEN
+
+====================================
+
+Create separate Nearby screen.
+
+Show:
+
+- Hospitals Active
+
+- Police Stations Open
+
+- Petrol Pumps Open
+
+- Puncture Centers Active
+
+Example:
+
+- Hospitals: 5 Active
+
+- Police: 2 Open
+
+- Petrol Pumps: 4 Open
+
+- Puncture Centers: 3 Active
+
+Use:
+
+- Small glowing telemetry cards
+
+- Green active indicator
+
+- Red closed indicator
+
+- Horizontal scrolling cards
+
+- Cyber futuristic UI
+
+Below status cards show:
+
+- Nearby Hospitals
+
+- Nearby Police Stations
+
+- Nearby Petrol Pumps
+
+- Nearby Puncture Centers
+
+Each nearby service card includes:
+
+- Service name
+
+- Contact number
+
+- Distance
+
+- ETA time
+
+- Open/Closed status
+
+- “Navigate” button
+
+When user clicks “Navigate”:
+
+→ Open Navigation screen
+
+→ Update map dynamically
+
+→ Show selected route, ETA, and distance
+
+====================================
+
+6. SERVICE LIST + NAVIGATION SYSTEM
+
+====================================
+
+When user clicks:
+
+- Find Hospital
+
+- Find Police Station
+
+- Find Petrol Pump
+
+- Find Puncture Center
+
+Do NOT open another page immediately.
+
+Instead:
+
+- Open Navigation screen with split layout.
+
+LEFT SIDE:
+
+- Live futuristic map panel
+
+RIGHT SIDE:
+
+- List of 3–4 nearby services
+
+Example Hospital List:
+
+- Neon Genesis Medical Center
+
+- Apex Cybernetic Hospital
+
+- City Care Medical Center
+
+- Quantum Emergency Hospital
+
+Each service card should include:
+
+- Service name
+
+- Contact number
+
+- Distance
+
+- ETA time
+
+- Open/Closed status
+
+====================================
+
+DYNAMIC NAVIGATION SYSTEM
+
+====================================
+
+When user clicks any hospital/service from right-side list:
+
+Update SAME map dynamically with:
+
+- New route line
+
+- New ETA
+
+- New distance
+
+- New destination marker
+
+Example:
+
+Hospital A:
+
+- 2.3 km
+
+- 5 mins
+
+Hospital B:
+
+- 4.1 km
+
+- 10 mins
+
+Police Station should also have separate 3–4 locations.
+
+Petrol Pump should also have separate 3–4 locations.
+
+Puncture Center should also have separate 3–4 locations.
+
+Each selected location dynamically updates:
+
+- Map route
+
+- Time
+
+- Distance
+
+- Target marker
+
+====================================
+
+MAP DESIGN
+
+====================================
+
+Create futuristic telemetry map UI inspired by reference image.
+
+Include:
+
+- Cyber grid background
+
+- Animated route line
+
+- Live user marker
+
+- Destination marker
+
+- ETA telemetry card
+
+- Distance telemetry card
+
+- Smooth map transitions
+
+- Animated location pulse
+
+====================================
+
+EXPAND MAP FEATURE
+
+====================================
+
+Add “Expand Map” button at top-right corner of navigation map.
+
+When clicked:
+
+→ Open full-screen futuristic map view.
+
+Full-screen map should include:
+
+- Larger live navigation UI
+
+- Full telemetry overlay
+
+- Animated route lines
+
+- Destination markers
+
+- ETA card
+
+- Distance card
+
+- Smooth expand animation
+
+- Cyber grid background
+
+Add:
+
+- “Close Fullscreen” button
+
+- Smooth minimize animation back to split layout
+
+====================================
+
+MAP TELEMETRY PANELS
+
+====================================
+
+Top telemetry panel:
+
+- Target Name
+
+- ETA
+
+- Distance
+
+Bottom telemetry panel:
+
+- Selected service details
+
+- Open/Closed status
+
+- Contact number
+
+- Action buttons
+
+Buttons:
+
+- Call Location
+
+- Close Navigation
+
+====================================
+
+USER PROFILE SCREEN
+
+====================================
+
+Include:
+
+- Profile image
+
+- User ID
+
+- Recent searches
+
+- Saved places
+
+- Settings button
+
+- Logout button
+
+Use:
+
+- Futuristic glass cards
+
+- Neon buttons
+
+- Smooth animations
+
+====================================
+
+AMBULANCE DRIVER SIDE
+
+====================================
+
+BOTTOM NAVIGATION:
+
+- Home
+
+- Navigation
+
+- History
+
+- Profile
+
+Use futuristic animated cyber navbar.
+
+====================================
+
+7. DRIVER AUTHENTICATION
+
+====================================
+
+Create:
+
+- Login screen
+
+- Registration screen
+
+Registration fields:
+
+- Driver Name
+
+- Ambulance Number
+
+- Phone Number
+
+- Hospital Name
+
+- Password
+
+Use:
+
+- Neon futuristic form UI
+
+- Animated glowing inputs
+
+- Glassmorphism panels
+
+====================================
+
+8. DRIVER HOME SCREEN
+
+====================================
+
+Show:
+
+- Driver profile card
+
+- Ambulance availability toggle
+
+- Completed patient count
+
+- Active emergency card
+
+- Small live map window
+
+When map clicked:
+
+→ Open Driver Navigation Screen
+
+Remove duty timer completely.
+
+====================================
+
+9. DRIVER NAVIGATION SCREEN
+
+====================================
+
+Include:
+
+- Full futuristic live map
+
+- Animated ambulance route
+
+- ETA telemetry
+
+- Distance telemetry
+
+- Hospital information
+
+- Contact number
+
+- Remaining time animation
+
+Add:
+
+- Green active navigation light
+
+- Live reducing minute counter
+
+Example:
+
+5 mins
+
+→ 4 mins
+
+→ 3 mins
+
+====================================
+
+STOP NAVIGATION SYSTEM
+
+====================================
+
+When driver clicks:
+
+“Stop Navigation”
+
+Automatically:
+
+- Count 1 completed patient
+
+- Update Home patient count
+
+- Add completed history entry
+
+- Show success popup animation
+
+- Turn navigation indicator green
+
+====================================
+
+10. DRIVER HISTORY SCREEN
+
+====================================
+
+Show:
+
+- Completed patient cards
+
+- Hospital name
+
+- Distance
+
+- Completed time
+
+- Green success status
+
+Use:
+
+- Animated futuristic cards
+
+- Responsive list layout
+
+====================================
+
+11. DRIVER PROFILE SCREEN
+
+====================================
+
+Include:
+
+- Driver image
+
+- Driver name
+
+- Ambulance number
+
+- Hospital name
+
+- Total completed patients
+
+- Logout button
+
+====================================
+
+LOGO DESIGN
+
+====================================
+
+Create animated futuristic logo:
+
+- GPS pin + heartbeat line
+
+- Neon cyan/red glow
+
+- Cyber emergency branding
+
+====================================
+
+PROJECT STRUCTURE
+
+====================================
+
+Generate scalable frontend architecture:
+
+- screens/
+
+- components/
+
+- navigation/
+
+- theme/
+
+- animations/
+
+- dummyData/
+
+- responsive/
+
+- assets/
+
+Create reusable components:
+
+- TelemetryCard
+
+- NavigationPanel
+
+- StatusToolbar
+
+- ServiceListCard
+
+- GlowButton
+
+- CyberNavbar
+
+- AnimatedMapOverlay
+
+====================================
+
+IMPORTANT
+
+====================================
+
+- Frontend only
+
+- No backend
+
+- No API integration
+
+- Use dummy data everywhere
+
+- Fully responsive:
+
+  - Mobile
+
+  - Tablet
+
+  - Desktop
+
+- Smooth futuristic animations everywhere
+
+- Use telemetry/cyber style UI
+
+- Navigation system should be main highlight
+
+- Dynamic route update system required
+
+- Professional emergency navigation feel
+
+- Match reference image design style
