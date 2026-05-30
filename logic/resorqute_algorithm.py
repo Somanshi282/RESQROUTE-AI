@@ -258,27 +258,32 @@ def _eta(distance_km: float, avg_speed_kmh: float = 40) -> int:
 
 # ─── Demo ──────────────────────────────────────────────────────────────────────
 
+# ...existing code... (keep all existing functions)
+
+# ➡️ ADD THIS AT THE END OF THE FILE:
+
 if __name__ == "__main__":
+    import sys
     import json
+    import argparse
 
-    # Test location: Vijayawada, Andhra Pradesh
-    TEST_LAT = 16.5062
-    TEST_LON = 80.6480
+    parser = argparse.ArgumentParser(description="ResorQute AI Emergency Navigation")
+    parser.add_argument("--lat", type=float, required=True, help="User latitude")
+    parser.add_argument("--lon", type=float, required=True, help="User longitude")
+    parser.add_argument("--type", type=str, default="hospital", help="Emergency type")
+    parser.add_argument("--top-k", type=int, default=5, help="Number of results")
+    parser.add_argument("--max-distance", type=float, default=50, help="Max distance in km")
 
-    print("=" * 60)
-    print("  ResorQute AI — Emergency Navigation Demo")
-    print("=" * 60)
-    print(f"  User location: {TEST_LAT}, {TEST_LON} (Vijayawada)\n")
+    args = parser.parse_args()
 
-    for etype in ["hospital", "police"]:
-        print(f"\n🔍 Finding nearest {etype.upper()}...")
-        response = emergency_response(TEST_LAT, TEST_LON,
-                                      emergency_type=etype, top_k=3)
-        print(f"Status : {response['status']}")
-        print(f"Message: {response['message']}")
-        print("Top results:")
-        for i, r in enumerate(response["all_results"], 1):
-            print(f"  {i}. {r['name']}")
-            print(f"     Distance : {r['distance_km']} km  {r['direction']}")
-            print(f"     ETA      : ~{r['eta_minutes']} min")
-            print(f"     Coords   : {r['lat']}, {r['lon']}")
+    try:
+        response = emergency_response(
+            args.lat,
+            args.lon,
+            emergency_type=args.type,
+            top_k=args.top_k
+        )
+        print(json.dumps(response))
+    except Exception as e:
+        print(json.dumps({"status": "ERROR", "message": str(e), "all_results": []}))
+        sys.exit(1)
